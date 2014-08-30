@@ -14,21 +14,21 @@ $this->title = 'yii2 extension yii2-fullcalendar demo';
 
     </div>
 
+    <div class="well">
+        Note: This is only a demo for the extension mentioned above. Check out the details at github!
+        If you have issues or question, pls. make an issue at github! This extension is only a wrapper
+        for the amazing efullcalendar.js library! If you wanna use it, pls. check out the license
+        there - you can use this code "as is". I take no warrenty for it! 
+
+        ;)
+    </div>
+
     <div class="body-content">
 
         <?= yii2fullcalendar\yii2fullcalendar::widget(array(
               'ajaxEvents' => Url::toRoute(['/site/jsoncalendar'])
             ));
-        ?>
-
-        <p>
-            Note: This is only a demo for the extension mentioned above. Check out the details at github!
-            If you have issues or question, pls. make an issue at github! This extension is only a wrapper
-            for the amazing efullcalendar.js library! If you wanna use it, pls. check out the license
-            there - you can use this code "as is". I take no warrenty for it! 
-
-            ;)
-        </p>
+        ?>        
 
     </div>
 </div>
