@@ -1,0 +1,12 @@
+#ignore vendor
+vendor/*
+
+# composer files to be ignored
+composer.lock
+composer.phar
+
+config/web-test.php
+config/db_local.php
+
+web/assets/*
+runtime/*

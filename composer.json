@@ -1,0 +1,47 @@
+{
+    "name": "philippfrenzel/yii2fullcalendar-demo",
+    "description": "Yii 2 Basic Application Template - with fullcalendar demo",
+    "keywords": ["yii2", "framework", "basic", "application template","extension","fullcalendar"],
+    "homepage": "http://www.frenzel.net/",
+    "type": "project",
+    "license": "BSD-3-Clause",
+    "support": {
+        "issues": "https://github.com/philippfrenzel/yii2fullcalendar-demo/issues?state=open",
+        "source": "https://github.com/philippfrenzel/yii2fullcalendar-demo"
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "*",
+        "yiisoft/yii2-bootstrap": "*",
+        "yiisoft/yii2-swiftmailer": "*",
+        "philippfrenzel/yii2fullcalendar": "*"
+    },
+    "require-dev": {
+        "yiisoft/yii2-codeception": "*",
+        "yiisoft/yii2-debug": "*",
+        "yiisoft/yii2-gii": "*",
+        "yiisoft/yii2-faker": "*"
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "yii\\composer\\Installer::setPermission",
+            "yii\\composer\\Installer::generateCookieValidationKey"
+        ]
+    },
+    "config": {
+        "process-timeout": 1800
+    },
+    "extra": {
+        "writable": [
+            "runtime",
+            "web/assets"
+        ],
+        "executable": [
+            "yii"
+        ],
+        "config": [
+            "config/web.php"
+        ]
+    }
+}
