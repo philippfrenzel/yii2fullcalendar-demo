@@ -10,6 +10,8 @@ use yii\helpers\Json;
 use app\models\LoginForm;
 use app\models\ContactForm;
 
+use \DateTime;
+
 class SiteController extends Controller
 {
     public function behaviors()
@@ -109,14 +111,24 @@ class SiteController extends Controller
         $Event = new \yii2fullcalendar\models\Event();
         $Event->id = 1;
         $Event->title = 'Testing';
-        $Event->start = date('Y-m-d\Th:m:s\Z');
+        $Event->start = date('Y-m-d\TH:m:s\Z');
         $events[] = $Event;
 
         $Event = new \yii2fullcalendar\models\Event();
         $Event->id = 2;
         $Event->title = 'Testing';
-        $Event->start = date('Y-m-d\Th:m:s\Z',strtotime('tomorrow 6am'));
+        $Event->start = date('Y-m-d\TH:m:s\Z',strtotime('tomorrow 8am'));
         $events[] = $Event;
+
+
+        $event3 = new DateTime('+2days 10am');
+        $Event = new \yii2fullcalendar\models\Event();
+        $Event->id = 2;
+        $Event->title = 'Testing';
+        $Event->start = $event3->format('Y-m-d\Th:m:s\Z');
+        $Event->end = $event3->modify('+3 hours')->format('Y-m-d\TH:m:s\Z');
+        $events[] = $Event;
+
 
         header('Content-type: application/json');
         echo Json::encode($events);
