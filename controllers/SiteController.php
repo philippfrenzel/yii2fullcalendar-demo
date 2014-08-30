@@ -6,6 +6,7 @@ use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
+use yii\helpers\Json;
 use app\models\LoginForm;
 use app\models\ContactForm;
 
@@ -93,4 +94,34 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+    
+    /**
+     * [actionJsoncalendar description]
+     * @param  [type] $start [description]
+     * @param  [type] $end   [description]
+     * @param  [type] $_     [description]
+     * @return [type]        [description]
+     */
+    public function actionJsoncalendar($start=NULL,$end=NULL,$_=NULL){
+        $events = array();
+        
+        //Demo
+        $Event = new \yii2fullcalendar\models\Event();
+        $Event->id = 1;
+        $Event->title = 'Testing';
+        $Event->start = date('Y-m-d\Th:m:s\Z');
+        $events[] = $Event;
+
+        $Event = new \yii2fullcalendar\models\Event();
+        $Event->id = 2;
+        $Event->title = 'Testing';
+        $Event->start = date('Y-m-d\Th:m:s\Z',strtotime('tomorrow 6am'));
+        $events[] = $Event;
+
+        header('Content-type: application/json');
+        echo Json::encode($events);
+
+        Yii::$app->end();
+    }
+
 }
