@@ -1,6 +1,7 @@
 <?php
 
 use yii\helpers\Url;
+use yii\web\JsExpression;
 
 /* @var $this yii\web\View */
 $this->title = 'yii2 extension yii2-fullcalendar demo';
@@ -25,7 +26,46 @@ $this->title = 'yii2 extension yii2-fullcalendar demo';
 
     <div class="body-content">
 
+    <?php
+
+    $JSCode = <<<EOF
+function(start, end) {
+        var title = prompt('Event Title:');
+        var eventData;
+        if (title) {
+            eventData = {
+                title: title,
+                start: start,
+                end: end
+            };
+            $('#w0').fullCalendar('renderEvent', eventData, true);
+        }
+        $('#w0').fullCalendar('unselect');
+}
+EOF;
+
+    $JSEventClick = <<<EOF
+function(calEvent, jsEvent, view) {
+
+    alert('Event: ' + calEvent.title);
+    alert('Coordinates: ' + jsEvent.pageX + ',' + jsEvent.pageY);
+    alert('View: ' + view.name);
+
+    // change the border color just for fun
+    $(this).css('border-color', 'red');
+
+}
+EOF;
+    
+    ?>
+
         <?= yii2fullcalendar\yii2fullcalendar::widget(array(
+              'clientOptions' => [
+                    'selectable' => true,
+                    'selectHelper' => true,
+                    'select' => new JsExpression($JSCode),
+                    'eventClick' => new JsExpression($JSEventClick),
+              ],
               'ajaxEvents' => Url::toRoute(['/site/jsoncalendar'])
             ));
         ?>        
