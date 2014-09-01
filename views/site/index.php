@@ -65,6 +65,7 @@ EOF;
                     'selectHelper' => true,
                     'select' => new JsExpression($JSCode),
                     'eventClick' => new JsExpression($JSEventClick),
+                    'defaultDate' => date('Y-m-d')
               ],
               'ajaxEvents' => Url::toRoute(['/site/jsoncalendar'])
             ));
