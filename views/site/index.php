@@ -71,5 +71,17 @@ EOF;
             ));
         ?>        
 
+<h3>The needed code:</h3>
+
+<div class="well"> 
+<pre>
+Event Hover:
+    <?= Html::encode($JSCode); ?>
+
+Event Click:
+    <?= Html::encode($JSEventClick); ?>    
+</pre>
+</div>
+
     </div>
 </div>
