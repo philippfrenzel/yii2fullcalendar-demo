@@ -37,8 +37,12 @@ $this->title = 'yii2 extension yii2sly demo';
                 ['content' => '<img src="' . Url::to('@web/img/v-rod_muscle_sly.jpg') . '"></img>']
             ],
             'options' => [
-                'style' => "height:300px;"
+                'style' => "height:400px;"
             ],
+            'clientOptions' => [
+                'horizontal' => 1,
+                'activateMiddle' => 1
+            ]
         ]); ?>        
 
 <div class="clearfix"></div>
