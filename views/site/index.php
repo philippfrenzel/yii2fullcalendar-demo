@@ -1,6 +1,7 @@
 <?php
 
 use yii\helpers\Url;
+use yii\helpers\Html;
 use yii\web\JsExpression;
 
 /* @var $this yii\web\View */
@@ -76,10 +77,10 @@ EOF;
 <div class="well"> 
 <pre>
 Event Hover:
-    <?= Html::encode($JSCode); ?>
+<?= Html::encode($JSCode); ?>
 
 Event Click:
-    <?= Html::encode($JSEventClick); ?>    
+<?= Html::encode($JSEventClick); ?>    
 </pre>
 </div>
 
