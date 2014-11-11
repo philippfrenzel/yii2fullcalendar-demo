@@ -17,6 +17,7 @@
         "yiisoft/yii2-swiftmailer": "*",
         "philippfrenzel/yii2fullcalendar": "*",
         "philippfrenzel/yii2sly": "*",
+        "philippfrenzel/yii2masonry": "*",
         "yiisoft/yii2-jui" : "*"
     },
     "require-dev": {

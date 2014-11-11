@@ -60,6 +60,11 @@ class SiteController extends Controller
         return $this->render('sly');
     }
 
+    public function actionMasonry()
+    {
+        return $this->render('masonry');
+    }
+
     public function actionLogin()
     {
         if (!\Yii::$app->user->isGuest) {

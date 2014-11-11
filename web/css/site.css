@@ -89,3 +89,14 @@ a.desc:after {
     padding: 10px 20px;
     margin: 0 0 15px 0;
 }
+
+.item { 
+    width: 25%; 
+    background-color: #efefef;
+    border: solid;
+    border-top: 1px;
+    border-left: 0px;
+    border-color: #888888;
+}
+.item.w2 { width: 50%; }
+

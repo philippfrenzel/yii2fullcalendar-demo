@@ -37,6 +37,7 @@ AppAsset::register($this);
                 'items' => [
                     ['label' => 'eFullcalendar', 'url' => ['/site/index']],
                     ['label' => 'sly', 'url' => ['/site/sly']],
+                    ['label' => 'masonry', 'url' => ['/site/masonry']],
                     ['label' => 'About', 'url' => ['/site/about']],
                     ['label' => 'Contact', 'url' => ['/site/contact']],
                     Yii::$app->user->isGuest ?
