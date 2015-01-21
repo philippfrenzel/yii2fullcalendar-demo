@@ -27,7 +27,7 @@ $this->title = 'yii2 extension yii2masonry demo';
 
     <div class="body-content">
 
-        <?php \philippfrenzel\yii2masonry\yii2masonry::begin([
+        <?php \yii2masonry\yii2masonry::begin([
             'clientOptions' => [
                 'columnWidth' => 5,
                 'itemSelector' => '.item'
@@ -47,7 +47,7 @@ $this->title = 'yii2 extension yii2masonry demo';
         <div class="item"><h3>Test</h3><p>Und mehr Text</p></div>
         <div class="item"><h3>Test</h3><p>Und mehr Text. And more Text. Encore un peu de texte.</p></div>
 
-        <?php \philippfrenzel\yii2masonry\yii2masonry::end(); ?>
+        <?php \yii2masonry\yii2masonry::end(); ?>
 
 <div class="clearfix"></div>
 
