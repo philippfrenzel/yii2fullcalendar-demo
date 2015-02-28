@@ -18,6 +18,7 @@
         "philippfrenzel/yii2fullcalendar": "*",
         "philippfrenzel/yii2sly": "*",
         "philippfrenzel/yii2masonry": "*",
+        "philippfrenzel/yii2slidebars": "*",
         "yiisoft/yii2-jui" : "*"
     },
     "require-dev": {

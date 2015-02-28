@@ -34,18 +34,18 @@ $this->title = 'yii2 extension yii2masonry demo';
             ]
         ]); ?>
 
-        <div class="item"><h3>Test</h3><p>Und mehr Text</p></div>
-        <div class="item"><h3>Test</h3><p>Und mehr Text. And more Text. Encore un peu de texte.</p></div>
-        <div class="item"><h3>Test</h3><p>Und mehr Text</p></div>
-        <div class="item"><h3>Test</h3><p>Und mehr Text</p></div>
-        <div class="item"><h3>Test</h3><p>Und mehr Text. And more Text. Encore un peu de texte.</p></div>
-        <div class="item"><h3>Test</h3><p>Und mehr Text</p></div>
-        <div class="item"><h3>Test</h3><p>Und mehr Text. And more Text. Encore un peu de texte.</p></div>
-        <div class="item"><h3>Test</h3><p>Und mehr Text. And more Text. Encore un peu de texte.</p></div>
-        <div class="item"><h3>Test</h3><p>Und mehr Text</p></div>
-        <div class="item"><h3>Test</h3><p>Und mehr Text</p></div>
-        <div class="item"><h3>Test</h3><p>Und mehr Text</p></div>
-        <div class="item"><h3>Test</h3><p>Und mehr Text. And more Text. Encore un peu de texte.</p></div>
+        <div class="item"><h3>Test 01</h3><p>Und mehr Text</p></div>
+        <div class="item"><h3>Test 02</h3><p>Und mehr Text. And more Text. Encore un peu de texte.</p></div>
+        <div class="item"><h3>Test 03</h3><p>Und mehr Text</p></div>
+        <div class="item"><h3>Test 94</h3><p>Und mehr Text</p></div>
+        <div class="item"><h3>Test 95</h3><p>Und mehr Text. And more Text. Encore un peu de texte.</p></div>
+        <div class="item"><h3>Test 96</h3><p>Und mehr Text</p></div>
+        <div class="item"><h3>Test 97</h3><p>Und mehr Text. And more Text. Encore un peu de texte.</p></div>
+        <div class="item"><h3>Test 08</h3><p>Und mehr Text. And more Text. Encore un peu de texte.</p></div>
+        <div class="item"><h3>Test 09</h3><p>Und mehr Text</p></div>
+        <div class="item"><h3>Test 10</h3><p>Und mehr Text</p></div>
+        <div class="item"><h3>Test 11</h3><p>Und mehr Text</p></div>
+        <div class="item"><h3>Test 12</h3><p>Und mehr Text. And more Text. Encore un peu de texte.</p></div>
 
         <?php \yii2masonry\yii2masonry::end(); ?>
 
@@ -55,7 +55,7 @@ $this->title = 'yii2 extension yii2masonry demo';
 
 <div class="well"> 
 <pre>
-Don't forgett to add the "needed" stylesheets, to let it look ok!
+    Don't forgett to add the "needed" stylesheets, to let it look ok!
 </pre>
 </div>
 
