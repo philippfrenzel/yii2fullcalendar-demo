@@ -34,9 +34,6 @@
     },
     "config": {
         "process-timeout": 1800,
-        "github-oauth": {
-            "github.com": "75139a8bb446d599c371627879118b6b433e9e64"
-        }
     },
     "extra": {
         "yii\\composer\\Installer::postCreateProject": {
