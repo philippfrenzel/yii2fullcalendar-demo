@@ -65,7 +65,7 @@ class SiteController extends Controller
         return $this->render('masonry');
     }
 
-    public function actionMasonry()
+    public function actionSlidebars()
     {
         return $this->render('slidebars');
     }
