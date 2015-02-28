@@ -18,8 +18,7 @@
         "philippfrenzel/yii2fullcalendar": "*",
         "philippfrenzel/yii2sly": "*",
         "philippfrenzel/yii2masonry": "*",
-        "philippfrenzel/yii2slidebars": "*",
-        "yiisoft/yii2-jui" : "*"
+        "philippfrenzel/yii2slidebars": "*"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
@@ -34,9 +33,9 @@
         ]
     },
     "config": {
-        "process-timeout": 1800,
+        "process-timeout": 800,
         "github-oauth": {
-            "github.com": "7abac6adcf0dddc91c6452b2d5139ca547f7465c"
+            "github.com": "75139a8bb446d599c371627879118b6b433e9e64"
         }
     },
     "extra": {
